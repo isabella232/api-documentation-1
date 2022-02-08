@@ -12,6 +12,17 @@ Zettle Go API Glossary
   <dd>Also known as acquirer. An acquiring bank is a financial institution that authenticates the card holder and authorises the transaction. It ensures that the card is valid and the card has sufficient funds to complete the transaction.</dd>
 </dl>
 
+## E
+<dl>
+  <dt>Exchange</dt>
+  <dd>Instead of refunding payment as result of buyer returning goods from original sale the buyer and seller might agree on buyer receiving some other goods. This is called an exchange.</dd>
+</dl>
+
+<dl>
+  <dt>Extra amount tipping flow</dt>
+  <dd>This flow prompts customers with a question before entering the tip amount. This tipping flow can be used when taking card payments using the Zettle SDK. See Total amount tipping flow.</dd>
+</dl>
+
 ## I
 <dl>
   <dt>Inventory balance</dt>
@@ -31,7 +42,7 @@ Zettle Go API Glossary
 
 <dl>
   <dt>Location</dt>
-  <dd>The Inventory service keeps track of inventory balances by moving products between locations. These are created automatically when tracking is enabled for a product. A location can be a physical Store, or virtual like Sold, Bin (discarded products), and Supplier (for replenishment).</dd>
+  <dd>The Inventory service keeps track of inventory balances by moving products between locations. These are created automatically when tracking is enabled for a product. A location can be a physical "Store", or virtual like "Sold", "Bin" (discarded products), or "Supplier" (for stock replenishment).</dd>
 </dl>
 
 <dl>
@@ -47,11 +58,42 @@ Zettle Go API Glossary
 
 ## P
 <dl>
+  <dt>Partial return</dt>
+  <dd>Means that goods that is part of an original sale is being returned. In such a case, an amount is normally resolved and refunded from the original payment. See Refund.</dd>
+</dl>
+
+<dl>
+  <dt>Payment</dt>
+  <dd>Corresponds to money being exchanged between seller and buyer as part of a sale. Can also be a “return of sale”, in which case payment is often referred to as refund.</dd>
+</dl>
+
+<dl>
   <dt>Preliminary account</dt>
   <dd>A Zettle merchant account. It's used to hold funds that are being checked by Zettle. After a transaction happens, the funds are recorded in the preliminary account while Zettle is checking whether the funds should be paid out. After that, the funds will be moved to and recorded in the liquid account while waiting to be paid out.</dd>
 </dl>
 
+<dl>
+  <dt>Purchase</dt>
+  <dd>The acquisition of an item or service which is typically paid for through an exchange of money or other asset.</dd>
+</dl>
+
+## R
+<dl>
+  <dt>Refund</dt>
+  <dd>Money being exchanged as the result of a returned sale. Items or services from the sale are being returned, and money is transferred from the seller back to the buyer.</dd>
+</dl>
+
+<dl>
+  <dt>Return</dt>
+  <dd>When a customer sends an item back to your store or warehouse. Customers must usually return an item before they get a refund.</dd>
+</dl>
+
 ## S
+<dl>
+  <dt>Sale</dt>
+  <dd>A business event between a seller and a buyer. Normally means giving out some goods or services to a buyer, who in turn promises to somehow fund the seller.</dd>
+</dl>
+
 <dl>
   <dt>SKU</dt>
   <dd>A stock keeping unit (SKU) is a unique code for identifying and tracking products in the inventory or stock.</dd>
@@ -63,6 +105,16 @@ Zettle Go API Glossary
 </dl>
 
 ## T
+<dl>
+  <dt>Tipping rate limit</dt>
+  <dd>Prevents entering of incorrect tipping amount in the Zettle card reader. Validation against the limit ensures that the tipping amount is not too high, for example if a customer enters their pin code by mistake. The validation also ensures that the tipping amount entered is higher than the total amount.</dd>
+</dl>
+
+<dl>
+  <dt>Total amount tipping flow</dt>
+  <dd>This lets customers enter the total amount, including tip, directly. This tipping flow can be used when taking card payments using the Zettle SDK. See Extra amount tipping flow.</dd>
+</dl>
+
 <dl>
   <dt>Tracking</dt>
   <dd>The Inventory service provides tracking of items in the product library. Tracking is applied to products for inventory balance calculations. This lets a merchant know how many items are available for selling, and if stock replenishment is needed. If tracking is enabled for a product, sales through the POS system are automatically tracked, and the inventory is updated accordingly.</dd>
