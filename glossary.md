@@ -9,10 +9,15 @@ Zettle Go API Glossary
 ## A
 <dl>
   <dt>Acquiring bank</dt>
-  <dd>Also known as acquirer. An acquiring bank is a financial institution that authenticates the card holder and authorises the transaction. It makes sure that the card is valid and the card has sufficient funds to complete the transaction.</dd>
+  <dd>Also known as acquirer. An acquiring bank is a financial institution that authenticates the card holder and authorises the transaction. It ensures that the card is valid and the card has sufficient funds to complete the transaction.</dd>
 </dl>
 
 ## I
+<dl>
+  <dt>Inventory balance</dt>
+  <dd>The sum of all product items available at a specific location. The inventory balance for the store location type is usually the most important for integrations.</dd>
+</dl>
+
 <dl>
   <dt>Issuing bank</dt>
   <dd>Also known as issuer. An issuing bank is a bank or financial institution that offers payment cards. For example, credit and debit cards.</dd>
@@ -22,6 +27,16 @@ Zettle Go API Glossary
 <dl>
   <dt>Liquid account</dt>
   <dd>A Zettle merchant account. It's used to hold funds that are ready to be paid out to merchants. After a transaction happens, the funds are recorded in the preliminary account while Zettle is checking whether the funds should be paid out. After that, the funds will be moved to and recorded in the liquid account while waiting to be paid out.</dd>
+</dl>
+
+<dl>
+  <dt>Location</dt>
+  <dd>The Inventory service keeps track of inventory balances by moving products between locations. These are created automatically when tracking is enabled for a product. A location can be a physical Store, or virtual like Sold, Bin (discarded products), and Supplier (for replenishment).</dd>
+</dl>
+
+<dl>
+  <dt>Low stock threshold</dt>
+  <dd>This is the minimum amount of inventory a merchant wants to have on hand. You can set the low stock threshold value through the Inventory API to help merchants manage their inventory.</dd>
 </dl>
 
 ## M
@@ -40,6 +55,17 @@ Zettle Go API Glossary
 <dl>
   <dt>SKU</dt>
   <dd>A stock keeping unit (SKU) is a unique code for identifying and tracking products in the inventory or stock.</dd>
+</dl>
+
+<dl>
+  <dt>Stock level</dt>
+  <dd>The number of products a merchant needs to have at hand to fulfill customer orders and delivery expectations. Inventory management helps maintain the stock level as low as possible, and at the same time make products available when required. </dd>
+</dl>
+
+## T
+<dl>
+  <dt>Tracking</dt>
+  <dd>The Inventory service provides tracking of items in the product library. Tracking is applied to products for inventory balance calculations. This lets a merchant know how many items are available for selling, and if stock replenishment is needed. If tracking is enabled for a product, sales through the POS system are automatically tracked, and the inventory is updated accordingly.</dd>
 </dl>
 
 ## V
