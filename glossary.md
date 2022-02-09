@@ -15,7 +15,7 @@ Zettle Go API Glossary
 ## E
 <dl>
   <dt>Exchange</dt>
-  <dd>Instead of refunding payment as result of buyer returning goods from original sale the buyer and seller might agree on buyer receiving some other goods. This is called an exchange.</dd>
+  <dd>Instead of returning a payment, a seller can use an exchange with different goods than what was in the original sale, to refund a buyer.</dd>
 </dl>
 
 <dl>
@@ -26,7 +26,7 @@ Zettle Go API Glossary
 ## I
 <dl>
   <dt>Inventory balance</dt>
-  <dd>The sum of all product items available at a specific location. The inventory balance for the store location type is usually the most important for integrations.</dd>
+  <dd>The sum of all product items available at a specific location. The inventory balance for the store location type is usually the most important for integrations. See Location.</dd>
 </dl>
 
 <dl>
@@ -59,7 +59,7 @@ Zettle Go API Glossary
 ## P
 <dl>
   <dt>Partial return</dt>
-  <dd>Means that goods that is part of an original sale is being returned. In such a case, an amount is normally resolved and refunded from the original payment. See Refund.</dd>
+  <dd>A partial return means that goods that is part of an original sale is being returned. In such a case, an amount is normally resolved and refunded from the original payment. See Refund.</dd>
 </dl>
 
 <dl>
@@ -74,7 +74,7 @@ Zettle Go API Glossary
 
 <dl>
   <dt>Purchase</dt>
-  <dd>The acquisition of an item or service which is typically paid for through an exchange of money or other asset.</dd>
+  <dd>The acquisition of an item or service that is typically paid for through an exchange of money or other asset.</dd>
 </dl>
 
 ## R
