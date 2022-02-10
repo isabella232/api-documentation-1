@@ -59,7 +59,7 @@ Zettle Go API Glossary
 ## P
 <dl>
   <dt>Partial return</dt>
-  <dd>A partial return means that goods that is part of an original sale is being returned. In such a case, an amount is normally resolved and refunded from the original payment. See Refund.</dd>
+  <dd>A partial return means that goods that are part of an original sale are being returned. In such a case, an amount is normally resolved and refunded from the original payment. See Refund.</dd>
 </dl>
 
 <dl>
